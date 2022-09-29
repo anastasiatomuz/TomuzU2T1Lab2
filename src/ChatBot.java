@@ -44,6 +44,22 @@ public class ChatBot {
     public String goodbye() {
         return "It was nice talking with you! Have a great day! Sincerely, " + name;
     }
+
+    //method to create a pause so the user can read the info printed on console
+    public void stall(){
+        try {
+            Thread.sleep(3000);
+        }catch (InterruptedException e) {
+            System.err.format("IOException: %s%n", e);
+        }
+    }
+
+    //returns if, of the two parameter numbers, the first one is greater than the second one
+    public boolean greaternum(int num1, int num2){
+        return num1 > num2;
+    }
+
+
 }
 
 
